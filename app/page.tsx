@@ -10,6 +10,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import "/public/styles.css";
 import "/node_modules/devicon/devicon.min.css";
 import { useState } from "react";
+import { Close } from "@mui/icons-material";
+import { EmailOutlined } from "@mui/icons-material";
+import { LocalPhoneOutlined } from "@mui/icons-material";
 
 const chivo = Chivo_Mono({ subsets: ['latin'], weight: '400' });
 
@@ -26,8 +29,6 @@ export default function Home() {
 
   const [showMenu,setShowMenu] = useState(false);
 
-  
-
   return (
     <div className="bg-gray-900 min-h-screen w-full " id="home">
       <div className="flex justify-between items-center p-4 px-10">
@@ -42,16 +43,20 @@ export default function Home() {
         </div>
 
         <div className="md:hidden">
-         <button type="button" onClick={ (e) => {showMenu ? setShowMenu(false) : setShowMenu(true)}}> <MenuIcon className="text-white"/></button>
+         <button type="button" onClick={ (e) => {showMenu ? setShowMenu(false) : setShowMenu(true)}}>{showMenu ? "" : <MenuIcon className="text-white text-3xl"/>}</button>
         </div>
 
         {showMenu && (
-          <div className={`flex flex-col justify center items-center md:hidden fixed top-20 right-0 h-full w-40 text-white bg-gray-800 bg-opacity-55 z-40 ${chivo.className}`}>
-            <a href="#home" className="transition-all duration-500 ">Home</a>
-            <a href="#skills" className="transition-all duration-500 ">Skills</a>
-            <a href="#projects" className="transition-all duration-500 ">Projects</a>
-            <a href="#contact" className="transition-all duration-500 ">Contact Me</a>
+          <div className="md:hidden fixed top-0 right-0 h-full w-[40vw] text-white bg-black bg-opacity-80 z-40 transition-all duration-500">
+              <div className="flex flex-col p-5 text-center mt-5 gap-10">
+                <button type="button" onClick={(e) => setShowMenu(false)}><Close className="self-end"/></button>
+                <a href="#home" className="transition-all duration-500 text-lg">Home</a>
+                <a href="#skills" className="transition-all duration-500 text-lg ">Skills</a>
+                <a href="#projects" className="transition-all duration-500 text-lg">Projects</a>
+                <a href="#contact" className="transition-all duration-500 text-lg">Contact Me</a>
+              </div>
           </div>
+
         )}
       </div>
 
@@ -75,6 +80,7 @@ export default function Home() {
 
           </div>
         </div>
+
         <div className="order-1 md:order-2 md:w-1/2 flex flex-col justify-center items-center mt-6 md:mt-0">
           <Image
             src="/images.jpg"
@@ -116,22 +122,41 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-20 md:px-10" id="projects">
-      <p className="text-white text-4xl font-bold px-10">Projects</p>
-      <div className="grid gap-10 md:grid-cols-2 px-10 mt-10">
-        {projects.map((project) => (
-            <div className="border-2 border-white rounded-xl flex flex-col p-4 hover:bg-slate-800 hover:duration-500 h-fit" key={project.id}>
-            <div>
-                <p className="text-white font-bold text-xl">{project.Name}</p>
-                <p className="text-gray-300 mt-4">{project.Description}</p>
-                <div className="flex justify-between items-center mt-8">
+      <div id="projects"  className="mt-20 md:px-10">
+        <p className="text-white text-4xl font-bold px-10">Projects</p>
+        <div className="grid gap-10 md:grid-cols-2 px-10 mt-10">
+          {projects.map((project) => (
+              <div className="border-2 border-white rounded-xl flex flex-col p-4 hover:bg-slate-800 hover:duration-500 h-fit" key={project.id}>
+              <div >
+                  <p className="text-white font-bold text-xl">{project.Name}</p>
+                  <p className="text-gray-300 mt-4">{project.Description}</p>
+                  <div className="flex justify-between items-center mt-8">
                     <p className="text-gray-400">{project.Tech}</p>
                     <a href={project.Link} target="_blank" rel="noopener noreferrer" className="text-white"><GitHub className="md:h-7 md:w-7"/></a>
-                </div>
-            </div>
-        </div>
-        ))}
+                  </div>
+              </div>
           </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-20 md:px-10 pb-10">
+        <p className="text-white text-4xl font-bold px-10">Let's Connect</p>
+        <div className="mt-10 px-10 ">
+          <div className={`text-gray-300 ${chivo.className} md:w-4/5 text-justify`}>
+            <p>I'm eager to hear from you. Feel free to get in touch via the form below or through my email. 
+              Let's discuss how we can collaborate and achieve your goals together.</p>
+              <div className="text-gray-300 mt-5 md:text-lg">
+                <p><EmailOutlined/> kakkar.nitesh04@gmail.com</p>
+                <p className="mt-2"><LocalPhoneOutlined/> +91 9599586696</p>
+              </div>
+              <div id="contact" className="flex gap-4 mt-5 ">
+                <a href="https://github.com/Nitesh-04" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><GitHub className="md:h-7 md:w-7 text-white"/></a>
+                <a href="https://www.linkedin.com/in/nitesh-kakkar/" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><LinkedIn className="md:h-7 md:w-7 text-white"/></a>
+                <a href="" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><Instagram className="md:h-7 md:w-7 text-white"/></a>
+              </div>
+          </div>
+        </div>
       </div>
     </div>
   );
