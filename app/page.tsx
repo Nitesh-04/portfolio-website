@@ -2,11 +2,11 @@
 
 import { Chivo_Mono } from "next/font/google";
 import Image from "next/image";
-import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
+import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import { GitHub } from "@mui/icons-material";
 import { LinkedIn } from "@mui/icons-material";
 import { Instagram } from "@mui/icons-material";
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 import "/public/styles.css";
 import "/node_modules/devicon/devicon.min.css";
 import { useState } from "react";
@@ -14,7 +14,7 @@ import { Close } from "@mui/icons-material";
 import { EmailOutlined } from "@mui/icons-material";
 import { LocalPhoneOutlined } from "@mui/icons-material";
 
-const chivo = Chivo_Mono({ subsets: ['latin'], weight: '400' });
+const chivo = Chivo_Mono({ subsets: ["latin"], weight: "400" });
 
 
 export default function Home() {
@@ -71,12 +71,12 @@ export default function Home() {
             <p className={`text-gray-300 text-justify ${chivo.className}`}>Computer Science sophomore at VIT Vellore and frontend 
             enthusiast bridging the gap to full-stack development. 
             Driven by a desire to create engaging user experiences and a hardworking spirit,
-            I'm excited to leverage my skills as a Full-Stack Developer.</p>
+            I&apos;m excited to leverage my skills as a Full-Stack Developer.</p>
 
             <p className={`text-gray-300 text-justify mt-5 ${chivo.className}`}>
               I also find keen interest in Artificial Intelligence and Machine Learning</p>
 
-            <p className="mt-5"><a href="/Nitesh's Resume.pdf" className={`text-gray-300 font-lg underline mt-10 ${chivo.className}`} target="_blank" rel="noopener noreferrer" >Resume</a> <DownloadRoundedIcon className=" text-white"/></p>
+            <p className="mt-5"><a href="/Nitesh&apos;s Resume.pdf" className={`text-gray-300 font-lg underline mt-10 ${chivo.className}`} target="_blank" rel="noopener noreferrer" >Resume</a> <DownloadRoundedIcon className=" text-white"/></p>
 
           </div>
         </div>
@@ -141,11 +141,11 @@ export default function Home() {
       </div>
 
       <div className="mt-20 md:px-10 pb-10">
-        <p className="text-white text-4xl font-bold px-10">Let's Connect</p>
+        <p className="text-white text-4xl font-bold px-10">Let&apos;s Connect</p>
         <div className="mt-10 px-10 ">
           <div className={`text-gray-300 ${chivo.className} md:w-4/5 text-justify`}>
-            <p>I'm eager to hear from you. Feel free to get in touch via the form below or through my email. 
-              Let's discuss how we can collaborate and achieve your goals together.</p>
+            <p>I&apos;m eager to hear from you. Feel free to get in touch via the form below or through my email. 
+              Let&apos;s discuss how we can collaborate and achieve your goals together.</p>
               <div className="text-gray-300 mt-5 md:text-lg">
                 <p><EmailOutlined/> kakkar.nitesh04@gmail.com</p>
                 <p className="mt-2"><LocalPhoneOutlined/> +91 9599586696</p>
