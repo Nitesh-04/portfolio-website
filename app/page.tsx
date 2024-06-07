@@ -50,10 +50,10 @@ export default function Home() {
           <div className="md:hidden fixed top-0 right-0 h-full w-[40vw] text-white bg-black bg-opacity-80 z-40 transition-all duration-500">
               <div className="flex flex-col p-5 text-center mt-5 gap-10">
                 <button type="button" onClick={(e) => setShowMenu(false)}><Close className="self-end"/></button>
-                <a href="#home" className="transition-all duration-500 text-lg">Home</a>
-                <a href="#skills" className="transition-all duration-500 text-lg ">Skills</a>
-                <a href="#projects" className="transition-all duration-500 text-lg">Projects</a>
-                <a href="#contact" className="transition-all duration-500 text-lg">Contact Me</a>
+                <a href="#home" onClick={(e) => setShowMenu(false)} className="transition-all duration-500 text-lg">Home</a>
+                <a href="#skills" onClick={(e) => setShowMenu(false)} className="transition-all duration-500 text-lg ">Skills</a>
+                <a href="#projects" onClick={(e) => setShowMenu(false)} className="transition-all duration-500 text-lg">Projects</a>
+                <a href="#contact" onClick={(e) => setShowMenu(false)} className="transition-all duration-500 text-lg">Contact Me</a>
               </div>
           </div>
 
