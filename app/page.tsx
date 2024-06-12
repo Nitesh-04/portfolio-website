@@ -144,7 +144,7 @@ export default function Home() {
         <p className="text-white text-4xl font-bold px-10">Let&apos;s Connect</p>
         <div className="mt-10 px-10 ">
           <div className={`text-gray-300 ${chivo.className} md:w-4/5 text-justify`}>
-            <p>I&apos;m eager to hear from you. Feel free to get in touch via the form below or through my email. 
+            <p>I&apos;m eager to hear from you. Feel free to get in touch through my email or my socials. 
               Let&apos;s discuss how we can collaborate and achieve your goals together.</p>
               <div className="text-gray-300 mt-5 md:text-lg">
                 <p><EmailOutlined/> kakkar.nitesh04@gmail.com</p>
