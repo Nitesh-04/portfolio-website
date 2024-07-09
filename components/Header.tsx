@@ -39,7 +39,7 @@ export default function Header()
             </div>
 
             {showMenu && (
-                <div className="md:hidden fixed top-0 right-0 h-full w-[40vw] text-gray-900 dark:text-white bg-gray-200 dark:*:bg-black bg-opacity-80 z-40 transition-all duration-500">
+                <div className="md:hidden fixed top-0 right-0 h-full w-[40vw] text-gray-900 dark:text-white bg-gray-200 dark:bg-black bg-opacity-80 z-40 transition-all duration-500">
                     <div className="flex flex-col p-5 text-center mt-5 gap-10">
                         <button type="button" onClick={(e) => setShowMenu(false)}><Close className="self-end"/></button>
                         <a href="#home" onClick={(e) => setShowMenu(false)} className="transition-all duration-500 text-lg">Home</a>
