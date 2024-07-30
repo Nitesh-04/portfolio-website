@@ -16,8 +16,8 @@ export default function Projects()
         <p className="text-gray-900 dark:text-white text-4xl font-bold px-10">Projects</p>
         <div className="grid gap-10 md:grid-cols-2 px-10 mt-10">
           {projects.map((project) => (
-              <div className="border-2 border-gray-900 dark:border-white bg-gray-100 dark:bg-gray-900 rounded-xl flex flex-col p-4 hover:bg-gray-200 hover:dark:bg-slate-800 hover:duration-500 h-fit" key={project.id}>
-              <div >
+              <div className="border-2 border-gray-900 dark:border-white bg-gray-100 dark:bg-gray-900 rounded-xl flex flex-col p-4 hover:bg-gray-200 hover:dark:bg-slate-800 hover:duration-500" key={project.id}>
+              <div className="">
                   <p className="text-gray-900 dark:text-white font-bold text-xl">{project.Name}</p>
                   <p className="text-gray-900 dark:text-gray-300 mt-4">{project.Description}</p>
                   <div className="flex justify-between items-center mt-8">
@@ -35,18 +35,18 @@ export default function Projects()
 const projects =
 [
   {   
-      "id" :1,
-      "Name": "Complaint Management System",
-      "Description": "A full-stack Complaint Management System to streamline the grievance redressal process.",
-      "Tech": "HTML CSS JS ExpressJS PostgreSQL",
-      "Link": "https://github.com/Nitesh-04/complaint-portal"
+    "id":1,
+    "Name": "blogSphere",
+    "Description": "A blog management platform with intuitive CRUD , user authentication, and efficient database interactions for a seamless experience.",
+    "Tech": "NextJS TypeScript PrismaORM",
+    "Link": "https://github.com/Nitesh-04/blogSphere"
   },
   {   
-      "id":2,
-      "Name": "NoteCraft",
-      "Description": "A frontend for single-page note-taking application. Users can create and delete notes.",
-      "Tech": "ReactJS",
-      "Link":"https://github.com/Nitesh-04/NoteCraft"
+      "id" :2,
+      "Name": "Complaint Management System",
+      "Description": "A full-stack Complaint Management System to streamline the grievance redressal process. Users can submit complaints and track their progress on a secure backend",
+      "Tech": "HTML CSS JS ExpressJS PostgreSQL",
+      "Link": "https://github.com/Nitesh-04/complaint-portal"
   },
   {
       "id":3,
