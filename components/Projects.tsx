@@ -3,6 +3,7 @@ import { GitHub } from "@mui/icons-material";
 
 const chivo = Chivo_Mono({ subsets: ["latin"], weight: "400" });
 const chivo1 = Chivo_Mono({ subsets: ["latin"], weight: "500" });
+const chivo2 = Chivo_Mono({ subsets: ["latin"], weight: "200" });
 
 export default function Projects() {
     type project = {
@@ -22,7 +23,7 @@ export default function Projects() {
                         <p className={`text-gray-900 dark:text-white font-extrabold text-xl ${chivo1.className}`}>{project.Name}</p>
                         <p className={`text-gray-900 dark:text-gray-300 mt-4 ${chivo.className} flex-grow`}>{project.Description}</p>
                         <div className="flex justify-between items-center mt-4"> {/* Reduced margin here */}
-                            <p className={`text-gray-900 dark:text-gray-400 ${chivo.className}`}>{project.Tech}</p>
+                            <p className={`text-gray-900 dark:text-gray-400 ${chivo2.className}`}>{project.Tech}</p>
                             <a href={project.Link} target="_blank" rel="noopener noreferrer" className="text-gray-900 dark:text-white">
                                 <GitHub className="md:h-7 md:w-7" />
                             </a>
