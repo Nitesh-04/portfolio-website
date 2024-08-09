@@ -9,7 +9,7 @@ const chivo = Chivo_Mono({ subsets: ["latin"], weight: "400" });
 export default function Connect (){
     return (
         <div className="mt-20 md:px-10 pb-10">
-            <p className="text-gray-900 dark:text-white text-4xl font-bold px-10">Let&apos;s Connect</p>
+            <p className={`text-gray-900 dark:text-white text-4xl font-bold px-10`}>Let&apos;s Connect</p>
             <div className="mt-10 px-10 ">
                 <div className={`text-gray-900 dark:text-gray-300 ${chivo.className} md:w-4/5 text-justify`}>
                     <p>I&apos;m eager to hear from you. Feel free to get in touch through my email or my socials. 

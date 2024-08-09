@@ -15,7 +15,7 @@ export default function Header()
     const {theme,setTheme} = useTheme();
 
     function toggleDarkMode() {
-        setTheme(theme === "dark" ? "light" : "dark");
+        setTheme(theme === "light" ? "dark" : "light");
       };
 
     return (
@@ -25,7 +25,7 @@ export default function Header()
             </div>
             <div className={`md:flex space-x-10 hidden ${chivo.className}`}>
 
-                <DarkModeSwitch className="self-center mr-5 fill-gray-900 text-gray-900 dark:text-white dark:fill-white" checked={theme==="dark"} onChange={toggleDarkMode} size={24} />
+                <DarkModeSwitch className="self-center mr-5" checked={theme==="dark"} onChange={toggleDarkMode} size={24} />
 
                 <a href="#home" className="transition-all duration-500 text-gray-900 dark:text-white hover:text-gray-400">Home</a>
                 <a href="#skills" className="transition-all duration-500 text-gray-900 dark:text-white hover:text-gray-400">Skills</a>
@@ -34,7 +34,7 @@ export default function Header()
             </div>
 
             <div className="md:hidden flex gap-5">
-                <DarkModeSwitch className={`text-gray-900 dark:text-white self-center mr-5 ${showMenu ? 'hidden' : 'block'}`} checked={theme==="dark"} onChange={toggleDarkMode} size={24} />
+                <DarkModeSwitch className={` self-center mr-5 ${showMenu ? 'hidden' : 'block'}`} checked={theme==="dark"} onChange={toggleDarkMode} size={24} />
                 <button type="button" onClick={ (e) => {showMenu ? setShowMenu(false) : setShowMenu(true)}}>{showMenu ? "" : <MenuIcon className="text-gray-900 dark:text-white text-3xl"/>}</button>
             </div>
 
