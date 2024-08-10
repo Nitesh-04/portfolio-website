@@ -1,7 +1,7 @@
 "use client";
 
 import { Chivo_Mono } from "next/font/google";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Close } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
@@ -13,11 +13,18 @@ export default function Header() {
     const [showMenu, setShowMenu] = useState(false);
     const { theme, setTheme, resolvedTheme } = useTheme();
 
+    useEffect(() => {
+        if (!theme) {
+            setTheme("light");
+        }
+    }, [theme, setTheme]);
+
     function toggleDarkMode() {
         setTheme(theme === "light" ? "dark" : "light");
     }
 
-    const iconColor = resolvedTheme === "dark" ? "#ffffff" : "#000000";
+    const sunColor = resolvedTheme === "dark" ? "#ffffff" : "#000000";
+    const moonColor = resolvedTheme === "dark" ? "#ffffff" : "#000000";
 
     return (
         <div className="flex justify-between items-center p-4 px-10">   
@@ -27,12 +34,12 @@ export default function Header() {
             <div className={`md:flex space-x-10 hidden ${chivo.className}`}>
 
                 <DarkModeSwitch 
-                    className="self-center mr-5" 
+                    className="self-center mr-5 dark:text-white dark:fill-white" 
                     checked={resolvedTheme === "dark"} 
                     onChange={toggleDarkMode} 
                     size={24} 
-                    sunColor={iconColor}
-                    moonColor={iconColor}
+                    sunColor={sunColor}
+                    moonColor={moonColor}
                 />
 
                 <a href="#home" className="transition-all duration-500 text-gray-900 dark:text-white hover:text-gray-400">Home</a>
@@ -43,12 +50,12 @@ export default function Header() {
 
             <div className="md:hidden flex gap-5">
                 <DarkModeSwitch 
-                    className={`self-center mr-5 ${showMenu ? "hidden" : "block"}`} 
+                    className={`self-center mr-5 dark:text-white dark:fill-white ${showMenu ? "hidden" : "block"}`} 
                     checked={resolvedTheme === "dark"} 
                     onChange={toggleDarkMode} 
                     size={24} 
-                    sunColor={iconColor}
-                    moonColor={iconColor}
+                    sunColor={sunColor}
+                    moonColor={moonColor}
                 />
                 <button type="button" onClick={() => setShowMenu(!showMenu)}>
                     {showMenu ? "" : <MenuIcon className="text-gray-900 dark:text-white text-3xl"/>}
