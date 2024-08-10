@@ -22,7 +22,7 @@ export default function Projects() {
                     <div className="border-2 border-gray-900 dark:border-white bg-gray-100 dark:bg-gray-900 rounded-xl flex flex-col p-4 hover:bg-gray-200 hover:dark:bg-slate-800 hover:duration-500" key={project.id}>
                         <p className={`text-gray-900 dark:text-white font-extrabold text-xl ${chivo1.className}`}>{project.Name}</p>
                         <p className={`text-gray-900 dark:text-gray-300 mt-4 ${chivo.className} flex-grow`}>{project.Description}</p>
-                        <div className="flex justify-between items-center mt-4"> {/* Reduced margin here */}
+                        <div className="flex justify-between items-center mt-4">
                             <p className={`text-gray-900 dark:text-gray-400 ${chivo2.className}`}>{project.Tech}</p>
                             <a href={project.Link} target="_blank" rel="noopener noreferrer" className="text-gray-900 dark:text-white">
                                 <GitHub className="md:h-7 md:w-7" />
