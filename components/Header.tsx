@@ -12,18 +12,19 @@ const chivo = Chivo_Mono({ subsets: ["latin"], weight: "400" });
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    if (!theme) {
-      setTheme("light");
-    }
-  }, [theme, setTheme]);
+    setMounted(true);
+  }, []);
 
   function toggleDarkMode() {
     setTheme(theme === "light" ? "dark" : "light");
   }
 
+  if (!mounted) return null;
+  
   return (
     <div className="flex justify-between items-center p-4 px-10">
       <div className="flex gap-10 text-gray-900 dark:text-white text-3xl font-bold">
@@ -31,7 +32,7 @@ export default function Header() {
       </div>
       <div className={`md:flex space-x-10 hidden ${chivo.className}`}>
         <button onClick={toggleDarkMode} className="self-center">
-          {resolvedTheme === "dark" ? (
+          {theme === "dark" ? (
             <DarkModeIcon className="text-white" />
           ) : (
             <LightModeIcon className="text-black" />
@@ -66,7 +67,7 @@ export default function Header() {
 
       <div className="md:hidden flex gap-5">
         <button onClick={toggleDarkMode} className="self-center">
-          {resolvedTheme === "dark" ? (
+          {theme === "dark" ? (
             <DarkModeIcon className="text-white" />
           ) : (
             <LightModeIcon className="text-black" />
