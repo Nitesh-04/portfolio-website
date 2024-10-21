@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import "/public/styles.css";
 import { ThemeProvider } from "next-themes";
+import GithubActivity from "@/components/GithubActivity";
 
 export default function Home() 
 {
@@ -15,6 +16,7 @@ export default function Home()
             <About/>
             <Skills/>
             <Projects/>
+            <GithubActivity/>
             <Connect/>
         </div>  
       </ThemeProvider>
