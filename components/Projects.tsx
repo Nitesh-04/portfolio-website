@@ -8,7 +8,7 @@ const chivo2 = Chivo_Mono({ subsets: ["latin"], weight: "200" });
 export default function Projects() {
   return (
     <div id="projects" className="mt-20 px-4 md:px-10">
-      <p className="text-gray-900 dark:text-white text-3xl md:text-4xl font-bold ml-5">
+      <p className="text-gray-900 dark:text-white text-3xl md:text-4xl font-bold px-10">
         Projects
       </p>
 
