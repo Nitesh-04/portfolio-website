@@ -37,6 +37,7 @@ export default function About(){
                 height={200}
                 alt="Picture of the author"
                 className="rounded-full md:w-[300px] md:h-[300px]"
+                loading="lazy"
             />
             <div className="flex gap-4 mt-6 mb-6 md:mt-10 text-gray-900 dark:text-white">
                 <a href="https://github.com/Nitesh-04" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><GitHub className="md:h-7 md:w-7 "/></a>
