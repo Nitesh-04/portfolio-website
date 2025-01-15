@@ -11,7 +11,7 @@ export default function Home()
 {
     return (
       <ThemeProvider attribute="class">
-        <div className="bg-gray-100 dark:bg-gray-900 min-h-screen w-full " id="home">
+        <div className="bg-gray-100 min-h-screen w-full " id="home">
             <Header/>
             <About/>
             <Skills/>
