@@ -25,7 +25,7 @@ export default function About(){
                     valuable skill set and dedication to any team environment.
                 </p>
 
-                <p className="mt-10 text-lg"><a href="/Nitesh&apos;s Resume.pdf" className={`text-gray-900 dark:text-gray-300 font-lg underline mt-10 ${chivo.className}`} target="_blank" rel="noopener noreferrer" >Resume</a> <DownloadRoundedIcon className="text-gray-900 dark:text-white"/></p>
+                <p className="mt-10 text-lg"><a href="/Nitesh_s_Resume.pdf" className={`text-gray-900 dark:text-gray-300 font-lg underline mt-10 ${chivo.className}`} target="_blank" rel="noopener noreferrer" >Resume</a> <DownloadRoundedIcon className="text-gray-900 dark:text-white"/></p>
 
             </div>
             </div>

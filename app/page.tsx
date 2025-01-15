@@ -1,11 +1,11 @@
-import About from "@/components/About";
-import Connect from "@/components/Connect";
-import Header from "@/components/Header";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
+import About from "@/app/_components/About";
+import Connect from "@/app/_components/Connect";
+import Header from "@/app/_components/Header";
+import Projects from "@/app/_components/Projects";
+import Skills from "@/app/_components/Skills";
 import "/public/styles.css";
 import { ThemeProvider } from "next-themes";
-import GithubActivity from "@/components/GithubActivity";
+import GithubActivity from "@/app/_components/GithubActivity";
 
 export default function Home() 
 {
