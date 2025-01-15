@@ -4,24 +4,16 @@ import { Chivo_Mono } from "next/font/google";
 import { useState, useEffect } from "react";
 import { Close } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useTheme } from "next-themes";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import LightModeIcon from "@mui/icons-material/LightMode";
 
 const chivo = Chivo_Mono({ subsets: ["latin"], weight: "400" });
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  function toggleDarkMode() {
-    setTheme(theme === "light" ? "dark" : "light");
-  }
 
   if (!mounted) return null;
   
@@ -31,14 +23,6 @@ export default function Header() {
         <p>NK.</p>
       </div>
       <div className={`md:flex space-x-10 hidden ${chivo.className}`}>
-        <button onClick={toggleDarkMode} className="self-center">
-          {theme === "dark" ? (
-            <DarkModeIcon className="text-white" />
-          ) : (
-            <LightModeIcon className="text-black" />
-          )}
-        </button>
-
         <a
           href="#home"
           className="transition-all duration-500 text-gray-900 dark:text-white hover:text-gray-400"
@@ -66,13 +50,6 @@ export default function Header() {
       </div>
 
       <div className="md:hidden flex gap-5">
-        <button onClick={toggleDarkMode} className="self-center">
-          {theme === "dark" ? (
-            <DarkModeIcon className="text-white" />
-          ) : (
-            <LightModeIcon className="text-black" />
-          )}
-        </button>
         <button type="button" onClick={() => setShowMenu(!showMenu)}>
           {showMenu ? (
             ""

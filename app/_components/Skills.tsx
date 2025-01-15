@@ -67,10 +67,6 @@ export default function Skills() {
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-slate-300 text-slate-900 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">PostgreSQL</span>
                 </div>
                 <div className="relative group">
-                    <i className="devicon-git-plain text-4xl"></i>
-                    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-slate-300 text-slate-900 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Git</span>
-                </div>
-                <div className="relative group">
                     <i className="devicon-github-original text-4xl"></i>
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-slate-300 text-slate-900 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">GitHub</span>
                 </div>

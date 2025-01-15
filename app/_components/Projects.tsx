@@ -12,7 +12,7 @@ export default function Projects() {
         Projects
       </p>
 
-      <div className="grid gap-6 md:gap-10 grid-cols-1 md:grid-cols-2 mt-8 md:mt-10 px-10">
+      <div className="grid gap-6 md:gap-10 grid-cols-1 md:grid-cols-2 mt-8 md:mt-10 md:px-10">
         {projects.map((project) => (
           <div
             className="border border-gray-900 dark:border-zinc-100 bg-gray-100 dark:bg-gray-900 
