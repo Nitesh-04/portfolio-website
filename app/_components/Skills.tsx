@@ -4,8 +4,8 @@ import "/node_modules/devicon/devicon.min.css";
 export default function Skills() {
     return (
         <div className="mt-20 md:px-10" id="skills">
-            <p className="text-gray-900  text-3xl font-bold px-10">Technical Skills</p>
-            <div className="flex flex-wrap gap-10 mt-10 px-10 pr-2 md:px-10 text-gray-900">
+            <p className="text-gray-900 text-3xl font-bold px-10">Technical Skills</p>
+            <div className="flex flex-wrap gap-10 mt-10 justify-center text-gray-900">
                 <div className="relative group">
                     <i className="devicon-python-plain text-4xl"></i>
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-slate-300 text-slate-900 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Python</span>
