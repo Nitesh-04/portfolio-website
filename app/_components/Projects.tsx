@@ -74,24 +74,24 @@ const projects = [
     id: 2,
     Name: "ExamCooker",
     Description:
-      "Led a team of 20 individuals in development of ExamCooker, an exam preparation platform, managing a 5,500-line codebase, and supporting a user base of 6000+ students.",
+      "Led a team of 20 individuals in development of ExamCooker, an exam preparation platform, managing a 5,500-line codebase, and supporting a user base of 8000+ students.",
     Tech: ["TypeScript", "Redis", "Google Cloud", "NextJS"],
     Link: "https://github.com/ACM-VIT/ExamCooker-2024",
   },
   {
     id: 3,
+    Name: "Resturant-Chatbot",
+    Description:
+      "Developed a restaurant chatbot enabling ordering, cart management (add/remove), and order tracking with a conversational AI interface",
+    Tech: ["ReactJS", "FastAPI", "Dialogflow", "MySQL","Python"],
+    Link: "https://github.com/Nitesh-04/restaurant-chatbot",
+  },
+  {
+    id: 4,
     Name: "BlogSphere",
     Description:
       "A blog management platform with intuitive CRUD , user authentication, and efficient database interactions for a seamless experience.",
     Tech: ["NextJS", "TypeScript", "PrismaORM", "Supabase", "Clerk"],
     Link: "https://github.com/Nitesh-04/BlogSphere",
-  },
-  {
-    id: 4,
-    Name: "Portfolio",
-    Description:
-      "A self coded porfolio website to display my projects, skills and connect with people. Inspired by Brittany Chiang's portfolio.",
-    Tech: ["TypeScript", "TailwindCSS", "NextJS", "Vercel"],
-    Link: "https://github.com/Nitesh-04/portfolio-v2",
   },
 ];
