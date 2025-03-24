@@ -51,6 +51,10 @@ export default function Skills() {
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-slate-300 text-slate-900 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">React</span>
                 </div>
                 <div className="relative group">
+                    <i className="devicon-vitejs-plain text-4xl"></i>
+                    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-slate-300 text-slate-900 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">ViteJs</span>
+                </div>
+                <div className="relative group">
                     <i className="devicon-nextjs-plain text-4xl"></i>
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-slate-300 text-slate-900 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Next.js</span>
                 </div>
@@ -87,6 +91,10 @@ export default function Skills() {
                 <div className="relative group">
                     <i className="devicon-redis-plain text-4xl"></i>
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-slate-300 text-slate-900 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Redis</span>
+                </div>
+                <div className="relative group">
+                    <i className="devicon-supabase-plain text-4xl"></i>
+                    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-slate-300 text-slate-900 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Supabase</span>
                 </div>
 
             

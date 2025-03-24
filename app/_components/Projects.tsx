@@ -46,7 +46,7 @@ export default function Projects() {
               {project.Tech.map((tech, index) => (
                 <span
                   key={index}
-                  className="inline-block rounded-full bg-gray-200
+                  className="inline-block rounded-full bg-gray-300
                          px-2.5 py-1 text-xs md:text-sm font-medium
                          text-slate-800"
                 >
