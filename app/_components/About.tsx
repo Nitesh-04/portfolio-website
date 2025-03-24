@@ -24,9 +24,6 @@ export default function About(){
                     to create engaging user experiences and a hardworking spirit, I bring a
                     valuable skill set and dedication to any team environment.
                 </p>
-
-                <p className="mt-10 text-lg"><a href="https://tinyurl.com/nitesh-resume" className={`text-gray-900 font-lg underline mt-10 ${chivo.className}`} target="_blank" rel="noopener noreferrer" >Resume</a> <DownloadRoundedIcon className="text-gray-900"/></p>
-
             </div>
             </div>
 

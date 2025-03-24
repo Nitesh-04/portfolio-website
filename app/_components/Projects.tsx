@@ -66,7 +66,7 @@ const projects = [
     id: 1,
     Name: "TrackHub",
     Description:
-      "Built a dynamic platform for managing internship applications, cutting down management time amongst students. Implemented features like automated reminders and an intuitive dashboard.",
+      "Built a dynamic platform for managing internship applications, cutting down management time amongst students. Implemented features like application logging, company specific rounds, interview dates, automated reminders, and an intuitive dashboard",
     Tech: ["NextJS", "TypeScript", "Prisma", "CockroachDB", "Cron Jobs"],
     Link: "https://github.com/Nitesh-04/track-hub",
   },
@@ -74,15 +74,15 @@ const projects = [
     id: 2,
     Name: "ExamCooker",
     Description:
-      "Led a team of 20 individuals in development of ExamCooker, an exam preparation platform, managing a 5,500-line codebase, and supporting a user base of 8000+ students.",
-    Tech: ["TypeScript", "Redis", "Google Cloud", "NextJS"],
+      "Led a team of 20 developing ExamCooker, an exam preparation platform featuring paper uploads, note sharing, and discussion forum. Reviewed and merged pull requests and maintained a 5,500-line codebase and supported a user base of 9000+ students.",
+    Tech: [ "NextJS","TypeScript", "Redis", "Google Cloud"],
     Link: "https://github.com/ACM-VIT/ExamCooker-2024",
   },
   {
     id: 3,
     Name: "Resturant-Chatbot",
     Description:
-      "Developed a restaurant chatbot enabling ordering, cart management (add/remove), and order tracking with a conversational AI interface",
+      "Developed a restaurant chatbot enabling ordering, cart management, and order tracking. Built a robust backend API with FastAPI to integrate context and intents designed in Dialogflow.",
     Tech: ["ReactJS", "FastAPI", "Dialogflow", "MySQL","Python"],
     Link: "https://github.com/Nitesh-04/restaurant-chatbot",
   },
@@ -90,7 +90,7 @@ const projects = [
     id: 4,
     Name: "BlogSphere",
     Description:
-      "A blog management platform with intuitive CRUD , user authentication, and efficient database interactions for a seamless experience.",
+      "A blog management platform with intuitive CRUD, user authentication, and efficient database interactions for a seamless experience. Implemented caching of blogs for faster load times.",
     Tech: ["NextJS", "TypeScript", "PrismaORM", "Supabase", "Clerk"],
     Link: "https://github.com/Nitesh-04/BlogSphere",
   },
