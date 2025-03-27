@@ -21,7 +21,7 @@ export default function About(){
                 <p className={`text-gray-700 text-justify ${chivo.className}`}>I am a Pre-Final year student at VIT Vellore with a
                     strong foundation in web development and a growing interest in AI/ML.
                     Equipped with valuable skills in fullstack development and driven by a desire 
-                    to create engaging user experiences and a hardworking spirit, I bring a
+                    to create engaging user experiences combined with my hardworking spirit, I bring a
                     valuable skill set and dedication to any team environment.
                 </p>
             </div>

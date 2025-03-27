@@ -66,7 +66,7 @@ const projects = [
     id: 1,
     Name: "TrackHub",
     Description:
-      "Built a dynamic platform for managing internship applications, cutting down management time amongst students. Implemented features like application logging, company specific rounds, interview dates, automated reminders, and an intuitive dashboard",
+      "Built a dynamic platform for managing internship applications, cutting down management time amongst students. Implemented features like application logging, interview dates, automated reminders, and an intuitive dashboard",
     Tech: ["NextJS", "TypeScript", "Prisma", "CockroachDB", "Cron Jobs"],
     Link: "https://github.com/Nitesh-04/track-hub",
   },
@@ -74,7 +74,7 @@ const projects = [
     id: 2,
     Name: "ExamCooker",
     Description:
-      "Led a team of 20 developing ExamCooker, an exam preparation platform featuring paper uploads, note sharing, and discussion forum. Reviewed and merged pull requests and maintained a 5,500-line codebase and supported a user base of 9000+ students.",
+      "Led a team of 20 developing ExamCooker, an exam preparation platform featuring paper uploads, note sharing, and discussion forum. Reviewed and merged pull requests and maintained a 5,500-line codebase that supports a user base of 9000+ students.",
     Tech: [ "NextJS","TypeScript", "Redis", "Google Cloud"],
     Link: "https://github.com/ACM-VIT/ExamCooker-2024",
   },
@@ -82,7 +82,7 @@ const projects = [
     id: 3,
     Name: "Resturant-Chatbot",
     Description:
-      "Developed a restaurant chatbot enabling ordering, cart management, and order tracking. Built a robust backend API with FastAPI to integrate context and intents designed in Dialogflow.",
+      "Developed a restaurant chatbot enabling ordering, cart management, and order tracking. Integrated using a robust backend API built using FastAPI to interact via context and intents designed in Dialogflow.",
     Tech: ["ReactJS", "FastAPI", "Dialogflow", "MySQL","Python"],
     Link: "https://github.com/Nitesh-04/restaurant-chatbot",
   },
