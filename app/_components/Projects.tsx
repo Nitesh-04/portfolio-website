@@ -80,7 +80,7 @@ const projects = [
   },
   {
     id: 3,
-    Name: "Resturant-Chatbot",
+    Name: "Restaurant-Chatbot",
     Description:
       "Developed a restaurant chatbot enabling ordering, cart management, and order tracking. Integrated using a robust backend API built using FastAPI to interact via context and intents designed in Dialogflow.",
     Tech: ["ReactJS", "FastAPI", "Dialogflow", "MySQL","Python"],
