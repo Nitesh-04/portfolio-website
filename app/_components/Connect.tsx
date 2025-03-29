@@ -21,7 +21,6 @@ export default function Connect (){
                     <div id="contact" className="flex gap-4 mt-5 text-gray-900">
                         <a href="https://github.com/Nitesh-04" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><GitHub className="md:h-7 md:w-7"/></a>
                         <a href="https://www.linkedin.com/in/nitesh-kakkar/" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><LinkedIn className="md:h-7 md:w-7 "/></a>
-                        <a href="" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><Instagram className="md:h-7 md:w-7"/></a>
                     </div>
                 </div>
             </div>
