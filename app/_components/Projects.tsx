@@ -1,9 +1,8 @@
 import { Chivo_Mono } from "next/font/google";
-import { GitHub } from "@mui/icons-material";
+import {ArrowOutward, GitHub } from "@mui/icons-material";
 
 const chivo = Chivo_Mono({ subsets: ["latin"], weight: "400" });
 const chivo1 = Chivo_Mono({ subsets: ["latin"], weight: "500" });
-const chivo2 = Chivo_Mono({ subsets: ["latin"], weight: "200" });
 
 export default function Projects() {
   return (
@@ -26,14 +25,26 @@ export default function Projects() {
               >
                 {project.Name}
               </p>
-              <a
-                href={project.Link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-900 hover:opacity-80 transition-opacity"
-              >
-                <GitHub className="h-6 w-6 md:h-7 md:w-7" />
-              </a>
+              <div className="flex gap-5">
+                <a
+                  href={project.Link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-900 hover:opacity-80 transition-opacity"
+                >
+                  <GitHub className="h-6 w-6 md:h-7 md:w-7" />
+                </a>
+                {project.RedirectLink ? 
+                  <a
+                    href={project.RedirectLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-900 hover:opacity-80 transition-opacity"
+                  >
+                    <ArrowOutward className="h-6 w-6 md:h-7 md:w-7" />
+                  </a>
+                 : null}
+              </div>
             </div>
 
             <p
@@ -69,6 +80,7 @@ const projects = [
       "Built a dynamic platform for managing internship applications, cutting down management time amongst students. Implemented features like application logging, interview dates, automated reminders, and an intuitive dashboard",
     Tech: ["NextJS", "TypeScript", "Prisma", "CockroachDB", "Cron Jobs"],
     Link: "https://github.com/Nitesh-04/track-hub",
+    RedirectLink: "https://trackhub.niteshkakkar.tech/",
   },
   {
     id: 2,
@@ -77,6 +89,7 @@ const projects = [
       "Integrated a custom ML model, using cosine similarity on audio features to deliver personalized music suggestions. Implemented OAuth-based authentication via the Spotify API to enable track retrieval, personalized recommendations, and playlist creation.",
     Tech: ["FastAPI", "Spotify API", "Scikit-Learn", "Pandas", "NextJS"],
     Link: "https://github.com/Nitesh-04/BeatWise",
+    RedirectLink: "https://beatwise.vercel.app/",
   },
   {
     id: 3,
@@ -93,5 +106,6 @@ const projects = [
       "Led a team of 20 developing ExamCooker, an exam preparation platform featuring paper uploads, note sharing, and discussion forum. Reviewed and merged pull requests and maintained a 5,500-line codebase that supports a user base of 9000+ students.",
     Tech: [ "NextJS","TypeScript", "Redis", "Google Cloud"],
     Link: "https://github.com/ACM-VIT/ExamCooker-2024",
+    RedirectLink: "https://examcooker.acmvit.com/",
   },
 ];
