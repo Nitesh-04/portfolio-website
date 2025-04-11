@@ -72,11 +72,11 @@ const projects = [
   },
   {
     id: 2,
-    Name: "ExamCooker",
+    Name: "BeatWise",
     Description:
-      "Led a team of 20 developing ExamCooker, an exam preparation platform featuring paper uploads, note sharing, and discussion forum. Reviewed and merged pull requests and maintained a 5,500-line codebase that supports a user base of 9000+ students.",
-    Tech: [ "NextJS","TypeScript", "Redis", "Google Cloud"],
-    Link: "https://github.com/ACM-VIT/ExamCooker-2024",
+      "Integrated a custom ML model, using cosine similarity on audio features to deliver personalized music suggestions. Implemented OAuth-based authentication via the Spotify API to enable track retrieval, personalized recommendations, and playlist creation.",
+    Tech: ["FastAPI", "Spotify API", "Typescript", "NextJS", "JWT"],
+    Link: "https://github.com/Nitesh-04/BeatWise",
   },
   {
     id: 3,
@@ -88,10 +88,10 @@ const projects = [
   },
   {
     id: 4,
-    Name: "BlogSphere",
+    Name: "ExamCooker",
     Description:
-      "A blog management platform with intuitive CRUD, user authentication, and efficient database interactions for a seamless experience. Implemented caching of blogs for faster load times.",
-    Tech: ["NextJS", "TypeScript", "PrismaORM", "Supabase", "Clerk"],
-    Link: "https://github.com/Nitesh-04/BlogSphere",
+      "Led a team of 20 developing ExamCooker, an exam preparation platform featuring paper uploads, note sharing, and discussion forum. Reviewed and merged pull requests and maintained a 5,500-line codebase that supports a user base of 9000+ students.",
+    Tech: [ "NextJS","TypeScript", "Redis", "Google Cloud"],
+    Link: "https://github.com/ACM-VIT/ExamCooker-2024",
   },
 ];
