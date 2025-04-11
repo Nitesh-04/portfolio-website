@@ -75,7 +75,7 @@ const projects = [
     Name: "BeatWise",
     Description:
       "Integrated a custom ML model, using cosine similarity on audio features to deliver personalized music suggestions. Implemented OAuth-based authentication via the Spotify API to enable track retrieval, personalized recommendations, and playlist creation.",
-    Tech: ["FastAPI", "Spotify API", "Typescript", "NextJS", "JWT"],
+    Tech: ["FastAPI", "Spotify API", "Scikit-Learn", "Pandas", "NextJS"],
     Link: "https://github.com/Nitesh-04/BeatWise",
   },
   {
