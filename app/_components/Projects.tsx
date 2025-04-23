@@ -89,7 +89,7 @@ const projects = [
       "Integrated a custom ML model, using cosine similarity on audio features to deliver personalized music suggestions. Implemented OAuth-based authentication via the Spotify API to enable track retrieval, personalized recommendations, and playlist creation.",
     Tech: ["FastAPI", "Spotify API", "Scikit-Learn", "Pandas", "NextJS"],
     Link: "https://github.com/Nitesh-04/BeatWise",
-    RedirectLink: "https://beatwise.vercel.app/",
+    RedirectLink: "https://beat-wise.vercel.app/",
   },
   {
     id: 3,
