@@ -45,6 +45,7 @@ export default function Header() {
       </div>
 
       <div className="md:hidden flex gap-5">
+        <ThemeToggle />
         <button type="button" onClick={() => setShowMenu(!showMenu)}>
           {showMenu ? (
             ""
