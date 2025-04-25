@@ -7,21 +7,21 @@ const chivo1 = Chivo_Mono({ subsets: ["latin"], weight: "500" });
 export default function Projects() {
   return (
     <div id="projects" className="mt-20 px-4 md:px-10">
-      <p className="text-gray-900  text-3xl font-bold px-10">
+      <p className="text-gray-900 dark:text-gray-200 text-3xl font-bold px-10">
         Projects
       </p>
 
       <div className="grid gap-6 md:gap-10 grid-cols-1 md:grid-cols-2 mt-8 md:mt-10 md:px-10">
         {projects.map((project) => (
           <div
-            className="border border-gray-900 bg-gray-100 
+            className="border border-gray-900 dark:border-gray-300 bg-gray-100 dark:bg-black
                                  rounded-xl flex flex-col p-4 md:p-6 hover:bg-gray-200 
                                   transition-all duration-300"
             key={project.id}
           >
             <div className="flex justify-between items-center">
               <p
-                className={`text-gray-900  font-extrabold text-lg md:text-xl ${chivo1.className}`}
+                className={`text-gray-900 dark:text-gray-200 font-extrabold text-lg md:text-xl ${chivo1.className}`}
               >
                 {project.Name}
               </p>
@@ -30,7 +30,7 @@ export default function Projects() {
                   href={project.Link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-900 hover:opacity-80 transition-opacity"
+                  className="text-gray-900 dark:text-gray-200 hover:opacity-80 transition-opacity"
                 >
                   <GitHub className="h-6 w-6 md:h-7 md:w-7" />
                 </a>
@@ -39,7 +39,7 @@ export default function Projects() {
                     href={project.RedirectLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-900 hover:opacity-80 transition-opacity"
+                    className="text-gray-900 dark:text-gray-200 hover:opacity-80 transition-opacity"
                   >
                     <ArrowOutward className="h-6 w-6 md:h-7 md:w-7" />
                   </a>
@@ -48,7 +48,7 @@ export default function Projects() {
             </div>
 
             <p
-              className={`text-gray-900 mt-3 md:mt-4 text-sm md:text-base ${chivo.className} flex-grow`}
+              className={`text-gray-900 dark:text-gray-300 mt-3 md:mt-4 text-sm md:text-base ${chivo.className} flex-grow`}
             >
               {project.Description}
             </p>
@@ -57,9 +57,9 @@ export default function Projects() {
               {project.Tech.map((tech, index) => (
                 <span
                   key={index}
-                  className="inline-block rounded-full bg-gray-300
+                  className="inline-block rounded-full bg-gray-200 dark:bg-black border border-gray-900 dark:border-gray-400
                          px-2.5 py-1 text-xs md:text-sm font-medium
-                         text-slate-800"
+                         text-slate-800 dark:text-gray-200"
                 >
                   {tech}
                 </span>

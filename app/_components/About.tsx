@@ -1,10 +1,8 @@
 
 import { Chivo_Mono } from "next/font/google";
 import Image from "next/image";
-import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import { GitHub } from "@mui/icons-material";
 import { LinkedIn } from "@mui/icons-material";
-import { Instagram } from "@mui/icons-material";
 
 const chivo = Chivo_Mono({ subsets: ["latin"], weight: "400" });
 
@@ -14,11 +12,11 @@ export default function About(){
             <div className="flex flex-col md:w-4/5 space-y-8mt-4 md:px-10 order-2 md:order-1">
             <div className="flex flex-col space-y-2 ">
                 <p className="text-gray-400 text-3xl md:text-5xl  font-bold">Hi! I am</p>
-                <p className={`text-gray-900 text-5xl md:text-6xl font-bold ${chivo.className}`}>Nitesh Kakkar.</p>
+                <p className={`text-gray-900 dark:text-gray-200 text-5xl md:text-6xl font-bold ${chivo.className}`}>Nitesh Kakkar.</p>
                 <p className="text-gray-400 text-xl md:text-3xl font-bold">Student / Web Developer</p>
             </div>
             <div className="order-3 mt-6 md:mt-10">
-                <p className={`text-gray-700 text-justify ${chivo.className}`}>I am a Pre-Final year student at VIT Vellore with a
+                <p className={`text-gray-700 dark:text-gray-300 text-justify ${chivo.className}`}>I am a Pre-Final year student at VIT Vellore with a
                     strong foundation in web development and a growing interest in AI/ML.
                     Equipped with valuable skills in fullstack development and driven by a desire 
                     to create engaging user experiences combined with my hardworking spirit, I bring a
@@ -37,8 +35,8 @@ export default function About(){
                 loading="lazy"
             />
             <div className="flex gap-4 mt-6 mb-6 md:mt-10 text-gray-900 ">
-                <a href="https://github.com/Nitesh-04" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><GitHub className="md:h-7 md:w-7 "/></a>
-                <a href="https://www.linkedin.com/in/nitesh-kakkar/" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><LinkedIn className="md:h-7 md:w-7"/></a>
+                <a href="https://github.com/Nitesh-04" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><GitHub className="md:h-7 md:w-7 dark:text-white "/></a>
+                <a href="https://www.linkedin.com/in/nitesh-kakkar/" className={`text-gray-300${chivo.className}`} target="_blank" rel="noopener noreferrer" ><LinkedIn className="md:h-7 md:w-7 dark:text-white"/></a>
             </div>
             </div>
         </div>

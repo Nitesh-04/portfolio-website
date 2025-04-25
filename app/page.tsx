@@ -9,7 +9,7 @@ import GithubActivity from "@/app/_components/GithubActivity";
 export default function Home() 
 {
     return (
-      <div className="bg-gray-100 min-h-screen w-full" id="home">
+      <div className="bg-gray-100 dark:bg-black min-h-screen w-full" id="home">
           <Header/>
           <About/>
           <Skills/>
