@@ -1,7 +1,7 @@
 "use client";
 
 import { Chivo_Mono } from "next/font/google";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import { Close } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import ThemeToggle from "./ThemeToggle";
