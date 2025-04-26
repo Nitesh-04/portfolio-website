@@ -14,7 +14,7 @@ export default function Projects() {
       <div className="grid gap-6 md:gap-10 grid-cols-1 md:grid-cols-2 mt-8 md:mt-10 md:px-10">
         {projects.map((project) => (
           <div
-            className="border border-gray-900 dark:border-gray-300 bg-gray-100 dark:bg-black
+            className="border border-gray-900 dark:border-gray-300 bg-gray-100 dark:bg-[#00162b]
                                  rounded-xl flex flex-col p-4 md:p-6 hover:bg-gray-200 
                                   transition-all duration-300"
             key={project.id}
@@ -57,7 +57,7 @@ export default function Projects() {
               {project.Tech.map((tech, index) => (
                 <span
                   key={index}
-                  className="inline-block rounded-full bg-gray-200 dark:bg-black border border-gray-900 dark:border-gray-400
+                  className="inline-block rounded-full bg-gray-200 dark:bg-[#00162b] border border-gray-900 dark:border-gray-400
                          px-2.5 py-1 text-xs md:text-sm font-medium
                          text-slate-800 dark:text-gray-200"
                 >
