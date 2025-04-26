@@ -30,15 +30,16 @@ export default function Home()
 
 
     return (
-      <div className="relative bg-gray-100 dark:bg-[#00162b] min-h-screen w-full" id="home">
+      <div className="relative bg-background dark:bg-background min-h-screen w-full" id="home">
           <div
             className="pointer-events-none absolute inset-0 opacity-50 transition-opacity duration-300"
             style={{
-              background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, ${
-                theme === "dark" ? "rgba(0, 200, 255, 0.15)" : "rgba(29, 71, 96, 0.15)"
-              }, transparent 80%)`,
-            }}            
+              background: theme === "dark"
+                ? `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(245, 220, 171, 0.1), transparent 80%)`
+                : undefined,
+            }}
           />
+
           <Header/>
           <About/>
           <Skills/>

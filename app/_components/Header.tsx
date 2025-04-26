@@ -13,50 +13,50 @@ export default function Header() {
   
   return (
     <div className="flex justify-between items-center p-4 px-10">
-      <div className="flex gap-10 text-gray-900 dark:text-gray-200  text-3xl font-bold">
+      <div className="flex gap-10 text-primary dark:primary text-3xl font-bold">
         <p>NK.</p>
       </div>
       <div className={`md:flex space-x-10 hidden ${chivo.className}`}>
         <ThemeToggle />
         <a
           href="#home"
-          className="transition-all duration-500 text-gray-900 dark:text-gray-200  hover:text-gray-400"
+          className="transition-all duration-500 text-foreground dark:text-foreground hover:text-gray-400"
         >
           Home
         </a>
         <a
           href="#skills"
-          className="transition-all duration-500 text-gray-900 dark:text-gray-200  hover:text-gray-400"
+          className="transition-all duration-500 text-foreground dark:text-foreground hover:text-gray-400"
         >
           Skills
         </a>
         <a
           href="#projects"
-          className="transition-all duration-500 text-gray-900 dark:text-gray-200  hover:text-gray-400"
+          className="transition-all duration-500 text-foreground dark:text-foreground hover:text-gray-400"
         >
           Projects
         </a>
         <a
           href="#contact"
-          className="transition-all duration-500 text-gray-900 dark:text-gray-200  hover:text-gray-400"
+          className="transition-all duration-500 text-foreground dark:text-foreground hover:text-gray-400"
         >
           Contact Me
         </a>
       </div>
 
       <div className="md:hidden flex gap-5">
-        <ThemeToggle />
+        {!showMenu && <ThemeToggle /> }
         <button type="button" onClick={() => setShowMenu(!showMenu)}>
           {showMenu ? (
             ""
           ) : (
-            <MenuIcon className="text-gray-900 dark:text-gray-200  text-3xl" />
+            <MenuIcon className="text-foreground dark:text-foreground text-3xl" />
           )}
         </button>
       </div>
 
       {showMenu && (
-        <div className="md:hidden fixed top-0 right-0 h-full w-[40vw] text-gray-900 dark:text-gray-200  bg-gray-200 dark:bg-gray-800 bg-opacity-80 z-40 transition-all duration-500">
+        <div className="md:hidden fixed top-0 right-0 h-full w-[40vw] text-foreground dark:text-foreground bg-muted-background dark:bg-background bg-opacity-80 z-40 transition-all duration-500">
           <div className="flex flex-col p-5 text-center mt-5 gap-10">
             <button type="button" onClick={() => setShowMenu(false)}>
               <Close className="self-end" />

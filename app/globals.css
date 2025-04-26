@@ -1,3 +1,95 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		/* Warmer, slightly deeper background for better readability */
+		--background: 40 30% 96%;
+		/* Much darker foreground for strong contrast - true black with slight warmth */
+		--foreground: 220 30% 10%;
+
+		--card: 40 30% 99%;
+		--card-foreground: 220 30% 10%;
+
+		--popover: 40 30% 99%;
+		--popover-foreground: 220 30% 10%;
+
+		/* More vibrant primary accent color */
+		--primary: 24 85% 50%;
+		--primary-foreground: 60 30% 98%;
+
+		/* More distinct secondary tones */
+		--secondary: 40 30% 88%;
+		--secondary-foreground: 220 30% 10%;
+
+		--muted: 40 25% 90%;
+		--muted-foreground: 220 30% 25%;
+
+		/* More colorful accent */
+		--accent: 30 60% 85%;
+		--accent-foreground: 24 80% 30%;
+
+		--destructive: 0 75% 50%;
+		--destructive-foreground: 60 30% 98%;
+
+		--border: 40 20% 80%;
+		--input: 40 25% 85%;
+		--ring: 24 85% 50%;
+
+		--radius: 0.5rem;
+
+		/* More vibrant chart colors with better distinction */
+		--chart-1: 24 85% 50%;
+		--chart-2: 200 75% 45%;
+		--chart-3: 160 65% 40%;
+		--chart-4: 120 60% 45%;
+		--chart-5: 280 60% 55%;
+
+
+        --color-calendar-graph-day-bg: #f3f4f6;
+        --color-calendar-graph-day-L1-bg: #fdba74;
+        --color-calendar-graph-day-L2-bg: #fb923c;
+        --color-calendar-graph-day-L3-bg: #f97316;
+        --color-calendar-graph-day-L4-bg: #ea580c;
+	}
+
+	.dark {
+		/* Softer dark background - not pure black */
+		--background: 220 15% 13%;
+		/* Warm off-white - not harsh white */
+		--foreground: 40 15% 90%;
+
+		--card: 220 15% 16%;
+		--card-foreground: 40 15% 90%;
+
+		--popover: 220 15% 16%;
+		--popover-foreground: 40 15% 90%;
+
+		/* Warmer primary that's visible but not harsh */
+		--primary: 20 80% 60%;
+		--primary-foreground: 40 15% 98%;
+
+		--secondary: 220 15% 22%;
+		--secondary-foreground: 40 15% 90%;
+
+		--muted: 220 15% 22%;
+		--muted-foreground: 40 10% 70%;
+
+		--accent: 220 15% 22%;
+		--accent-foreground: 40 15% 90%;
+
+		--destructive: 0 65% 60%;
+		--destructive-foreground: 40 15% 98%;
+
+		--border: 220 15% 25%;
+		--input: 220 15% 22%;
+		--ring: 20 80% 60%;
+
+		--chart-1: 20 80% 60%;
+		--chart-2: 190 70% 60%;
+		--chart-3: 150 60% 50%;
+		--chart-4: 100 50% 60%;
+		--chart-5: 320 60% 60%;
+	}
+}
