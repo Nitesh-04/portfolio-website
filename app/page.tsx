@@ -9,6 +9,7 @@ import "/public/styles.css";
 import GithubActivity from "@/app/_components/GithubActivity";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import Experience from "./_components/Experience";
 
 export default function Home() 
 {
@@ -43,6 +44,7 @@ export default function Home()
           <Header/>
           <About/>
           <Skills/>
+          <Experience/>
           <Projects/>
           <GithubActivity/>
           <Connect/>

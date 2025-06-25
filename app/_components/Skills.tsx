@@ -59,6 +59,10 @@ export default function Skills() {
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-background dark:bg-background text-primary dark:text-primary text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Next.js</span>
                 </div>
                 <div className="relative group">
+                    <i className="devicon-spring-original text-4xl text-muted-foreground dark:text-foreground"></i>
+                    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-background dark:bg-background text-primary dark:text-primary text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Spring Boot</span>
+                </div>
+                <div className="relative group">
                     <i className="devicon-tailwindcss-original text-4xl text-muted-foreground dark:text-foreground"></i>
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-background dark:bg-background text-primary dark:text-primary text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Tailwind CSS</span>
                 </div>
@@ -104,12 +108,24 @@ export default function Skills() {
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-background dark:bg-background text-primary dark:text-primary text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Git</span>
                 </div>
                 <div className="relative group">
+                    <i className="devicon-gitlab-plain text-4xl text-muted-foreground dark:text-foreground"></i>
+                    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-background dark:bg-background text-primary dark:text-primary text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">GitLab</span>
+                </div>
+                <div className="relative group">
                     <i className="devicon-docker-plain text-4xl text-muted-foreground dark:text-foreground"></i>
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-background dark:bg-background text-primary dark:text-primary text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Docker</span>
                 </div>
                 <div className="relative group">
+                    <i className="devicon-kubernetes-plain text-4xl text-muted-foreground dark:text-foreground"></i>
+                    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-background dark:bg-background text-primary dark:text-primary text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Kubernetes</span>
+                </div>
+                <div className="relative group">
                     <i className="devicon-postman-plain text-4xl text-muted-foreground dark:text-foreground"></i>
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-background dark:bg-background text-primary dark:text-primary text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">Postman</span>
+                </div>
+                <div className="relative group">
+                    <i className="devicon-amazonwebservices-plain-wordmark text-4xl text-muted-foreground dark:text-foreground"></i>
+                    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-background dark:bg-background text-primary dark:text-primary text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">AWS</span>
                 </div>
                 <div className="relative group">
                     <i className="devicon-prisma-original text-4xl text-muted-foreground dark:text-foreground"></i>

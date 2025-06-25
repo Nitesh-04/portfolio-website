@@ -14,9 +14,7 @@ export default function Projects() {
       <div className="grid gap-6 md:gap-10 grid-cols-1 md:grid-cols-2 mt-8 md:mt-10 md:px-10">
         {projects.map((project) => (
           <div
-            className="border border-gray-900 dark:border-gray-300 bg-background dark:bg-background
-                                 rounded-xl flex flex-col p-4 md:p-6 
-                                  transition-all duration-300"
+            className="group relative bg-white dark:bg-background rounded-2xl p-6 md:p-8 border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 hover:shadow-xl"
             key={project.id}
           >
             <div className="flex justify-between items-center">
@@ -54,17 +52,16 @@ export default function Projects() {
             </p>
 
             <div className="flex flex-wrap gap-2 mt-4">
-              {project.Tech.map((tech, index) => (
-                <span
-                  key={index}
-                  className="inline-block rounded-full bg-background dark:bg-background border border-gray-900 dark:border-gray-400
-                         px-2.5 py-1 text-xs md:text-sm font-medium
-                         text-foreground dark:text-gray-200"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+                {project.Tech.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1.5 text-xs md:text-sm font-medium rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-b from-primary/50 to-primary/20 rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
         ))}
       </div>
@@ -77,7 +74,7 @@ const projects = [
     id: 1,
     Name: "TrackHub",
     Description:
-      "Built a dynamic platform for managing internship applications, cutting down management time amongst students. Implemented features like application logging, interview dates, automated reminders, and an intuitive dashboard",
+      " Reduced application management time by engineering a full-stack internship tracking platform. Centralised application logging, interview dates, and status updates on an intuitive dashboard. Added customisable and automated notifications using cron jobs and nodemailer. ",  
     Tech: ["NextJS", "TypeScript", "Prisma", "CockroachDB", "Cron Jobs"],
     Link: "https://github.com/Nitesh-04/track-hub",
     RedirectLink: "https://trackhub.niteshkakkar.tech/",
@@ -93,17 +90,17 @@ const projects = [
   },
   {
     id: 3,
-    Name: "Restaurant-Chatbot",
+    Name: "Locked-In",
     Description:
-      "Developed a restaurant chatbot enabling ordering, cart management, and order tracking. Integrated using a robust backend API built using FastAPI to interact via context and intents designed in Dialogflow.",
-    Tech: ["ReactJS", "FastAPI", "Dialogflow", "MySQL","Python"],
-    Link: "https://github.com/Nitesh-04/restaurant-chatbot",
+      "Architected a scalable backend for collaborative study tracking, enabling group creation, member roles, and study session logging. Designed a clean, maintainable MVC-inspired backend structure with modular routing, middleware, and database logic.",
+    Tech: ["GoLang", "Go Fiber", "Gorm", "Postgresql", "Postman"],
+    Link: "https://github.com/Nitesh-04/locked-in",
   },
   {
     id: 4,
     Name: "ExamCooker",
     Description:
-      "Led a team of 20 developing ExamCooker, an exam preparation platform featuring paper uploads, note sharing, and discussion forum. Reviewed and merged pull requests and maintained a 5,500-line codebase that supports a user base of 9000+ students.",
+      "Led a team of 20 developing ExamCooker, an exam preparation platform featuring paper uploads, note sharing, and discussion forum. Reviewed and merged pull requests and maintained a 5,500-line codebase that supports a user base of 11000+ students.",
     Tech: [ "NextJS","TypeScript", "Redis", "Google Cloud"],
     Link: "https://github.com/ACM-VIT/ExamCooker-2024",
     RedirectLink: "https://examcooker.acmvit.com/",
