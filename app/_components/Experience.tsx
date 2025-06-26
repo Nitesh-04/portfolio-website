@@ -32,7 +32,7 @@ export default function Experience() {
               </div>
 
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-6 text-sm text-gray-600 dark:text-gray-400">
+              <div className="flex flex-col sm:flex-row gap-2 md:gap-6 mb-6 text-sm text-gray-600 dark:text-gray-400">
                 <div className="flex items-center gap-2">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2z" />
@@ -84,7 +84,7 @@ const experiences = [
     duration: "May 2025 - July 2025",
     location: "Gurugram, Haryana • On-site",
     description:
-      "Worked in the Payments Platform team, focusing on a custom internal job scheduler used to manage cron-like workflows across systems. Improved service scalability by migrating 6 Spring Boot microservices from EC2 to AWS EKS (Kubernetes), containerized using Docker and deployed via AWS ECR. Reduced post-release bugs by conducting integration testing in Pre-Production and User Acceptance Testing (UAT) environments to validate real-world service interactions.",
+      "Worked in the Payments Platform team, focusing on a custom internal job scheduler for cron-like workflows. Migrated 6 Spring Boot microservices from EC2 to AWS EKS using Docker and ECR, improving scalability. Reduced post-release bugs through integration and UAT testing in staging environments.",
     tech: ["Spring Boot", "AWS EKS", "Docker", "GitLab", "AWS ECR", "Jira"],
   },
   {
