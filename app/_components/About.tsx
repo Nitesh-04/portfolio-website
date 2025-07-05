@@ -16,7 +16,7 @@ export default function About(){
                 <p className="text-slate-700 dark:text-muted-foreground text-xl md:text-3xl font-bold">Student / Web Developer</p>
             </div>
             <div className="order-3 mt-6 md:mt-10">
-                <p className={`text-gray-700 dark:text-gray-300 text-justify ${chivo.className}`}>I am a Pre-Final year student at VIT Vellore with a
+                <p className={`text-gray-700 dark:text-gray-300 text-justify ${chivo.className}`}>I am a Final year student at VIT Vellore with a
                     strong foundation in web development and a growing interest in AI/ML.
                     Equipped with valuable skills in fullstack development and driven by a desire 
                     to create engaging user experiences combined with my hardworking spirit, I bring a

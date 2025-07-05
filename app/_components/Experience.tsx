@@ -17,7 +17,7 @@ export default function Experience() {
           {experiences.map((exp) => (
             <div
               key={exp.id}
-              className="group relative bg-white dark:bg-background rounded-2xl p-6 md:p-8 border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 hover:shadow-xl"
+              className="group relative bg-white dark:bg-background rounded-2xl p-6 md:px-8 md:py-5 border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 hover:shadow-xl"
             >
 
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
@@ -32,7 +32,7 @@ export default function Experience() {
               </div>
 
 
-              <div className="flex flex-col sm:flex-row gap-2 md:gap-6 mb-6 text-sm text-gray-600 dark:text-gray-400">
+              <div className="flex flex-col sm:flex-row gap-2 md:gap-6 mb-3 text-sm text-gray-600 dark:text-gray-400">
                 <div className="flex items-center gap-2">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2z" />
@@ -50,7 +50,7 @@ export default function Experience() {
               </div>
 
 
-              <p className={`text-sm md:text-base text-gray-800 dark:text-gray-300 leading-relaxed mb-6 ${chivo.className}`}>
+              <p className={`text-sm md:text-base text-gray-800 dark:text-gray-300 leading-relaxed mb-4 ${chivo.className}`}>
                 {exp.description}
               </p>
 
@@ -78,33 +78,30 @@ export default function Experience() {
 
 const experiences = [
   {
-    id: 1,
-    role: "Software Engineer Intern",
-    company: "PayU Payments Private Limited",
-    duration: "May 2025 - July 2025",
-    location: "Gurugram, Haryana • On-site",
-    description:
-      "Worked in the Payments Platform team, focusing on a custom internal job scheduler for cron-like workflows. Migrated 6 Spring Boot microservices from EC2 to AWS EKS using Docker and ECR, improving scalability. Reduced post-release bugs through integration and UAT testing in staging environments.",
-    tech: ["Spring Boot", "AWS EKS", "Docker", "GitLab", "AWS ECR", "Jira"],
+    "id": 1,
+    "role": "Software Engineer Intern",
+    "company": "PayU Payments Private Limited",
+    "duration": "May 2025 - July 2025",
+    "location": "Gurugram, Haryana • On-site",
+    "description": "Contributed to the Payments Platform team, optimizing infrastructure and improving system stability. Involved in migration of services to kubernetes and testing for enhanced reliability.",
+    "tech": ["Docker", "Spring Boot", "Kubernetes", "AWS", "GitLab", "Jira", "Confluence"]
   },
   {
-    id: 2,
-    role: "PRISM R&D Intern",
-    company: "Samsung Research Institute Bangalore",
-    duration: "October 2024 - April 2025",
-    location: "Remote",
-    description:
-      "Enhanced wake-up word detection for Samsung PRISM program. Developed a custom dataset of 2,000+ audio samples with MFCC feature extraction pipeline. Published findings and presented at IEEE ICCCNT 2025, establishing a new benchmark for voice assistant activation.",
-    tech: ["Python", "Machine Learning", "MFCC", "TensorFlow", "Research"],
+    "id": 2,
+    "role": "PRISM R&D Intern",
+    "company": "Samsung Research Institute Bangalore",
+    "duration": "October 2024 - April 2025",
+    "location": "Remote",
+    "description": "Conducted research on voice assistant activation, developing a novel dataset and feature extraction pipeline. Presented findings, establishing a new benchmark.",
+    "tech": ["Python", "Datasets", "MFCC", "TensorFlow", "Research"]
   },
   {
-    id: 3,
-    role: "Engineering Team Intern",
-    company: "Reserve Bank Innovation Hub",
-    duration: "May 2024 - June 2024",
-    location: "Remote",
-    description:
-      "Developed user-centric financial calculators with advanced visualization components using ReactJS to enhance user engagement and promote financial literacy. Analyzed existing financial calculators to identify improvement opportunities.",
-    tech: ["ReactJS", "JavaScript", "Data Visualization", "FinTech", "UI/UX"],
-  },
+    "id": 3,
+    "role": "Engineering Team Intern",
+    "company": "Reserve Bank Innovation Hub",
+    "duration": "May 2024 - June 2024",
+    "location": "Remote",
+    "description": "Developed interactive financial calculators using ReactJS, focusing on user engagement and financial literacy. Enhanced existing tools with new visualization features.",
+    "tech": ["ReactJS", "JavaScript", "Data Visualization", "FinTech", "UI/UX"]
+  }
 ];

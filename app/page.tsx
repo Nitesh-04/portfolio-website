@@ -46,7 +46,6 @@ export default function Home()
           <Skills/>
           <Experience/>
           <Projects/>
-          <GithubActivity/>
           <Connect/>
       </div>
     );

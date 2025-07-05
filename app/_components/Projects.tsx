@@ -71,38 +71,34 @@ export default function Projects() {
 
 const projects = [
   {
-    id: 1,
-    Name: "TrackHub",
-    Description:
-      " Reduced application management time by engineering a full-stack internship tracking platform. Centralised application logging, interview dates, and status updates on an intuitive dashboard. Added customisable and automated notifications using cron jobs and nodemailer. ",  
-    Tech: ["NextJS", "TypeScript", "Prisma", "CockroachDB", "Cron Jobs"],
-    Link: "https://github.com/Nitesh-04/track-hub",
-    RedirectLink: "https://trackhub.niteshkakkar.tech/",
+    "id": 1,
+    "Name": "TrackHub",
+    "Description": "Developed a full-stack internship tracking platform to centralize application logging, interview dates, and status updates. Features customizable, automated notifications for efficient management.",
+    "Tech": ["NextJS", "TypeScript", "Prisma", "CockroachDB", "Cron Jobs"],
+    "Link": "https://github.com/Nitesh-04/track-hub",
+    "RedirectLink": "https://trackhub.niteshkakkar.tech/"
   },
   {
-    id: 2,
-    Name: "BeatWise",
-    Description:
-      "Integrated a custom ML model, using cosine similarity on audio features to deliver personalized music suggestions. Implemented OAuth-based authentication via the Spotify API to enable track retrieval, personalized recommendations, and playlist creation.",
-    Tech: ["FastAPI", "Spotify API", "Scikit-Learn", "Pandas", "NextJS"],
-    Link: "https://github.com/Nitesh-04/BeatWise",
-    RedirectLink: "https://beat-wise.vercel.app/",
+    "id": 2,
+    "Name": "BeatWise",
+    "Description": "Created a personalized music recommendation system leveraging a custom ML model with cosine similarity on audio features. Integrates Spotify API for authentication, track retrieval, and playlist creation.",
+    "Tech": ["FastAPI", "Spotify API", "Scikit-Learn", "Pandas", "NextJS"],
+    "Link": "https://github.com/Nitesh-04/BeatWise",
+    "RedirectLink": "https://beat-wise.vercel.app/"
   },
   {
-    id: 3,
-    Name: "Locked-In",
-    Description:
-      "Architected a scalable backend for collaborative study tracking, enabling group creation, member roles, and study session logging. Designed a clean, maintainable MVC-inspired backend structure with modular routing, middleware, and database logic.",
-    Tech: ["GoLang", "Go Fiber", "Gorm", "Postgresql", "Postman"],
-    Link: "https://github.com/Nitesh-04/locked-in",
+    "id": 3,
+    "Name": "Locked-In",
+    "Description": "Architected a scalable backend for collaborative study tracking, supporting group creation, member roles, and session logging. Designed with a clean, modular MVC-inspired structure for maintainability.",
+    "Tech": ["GoLang", "Go Fiber", "Gorm", "Postgresql", "Postman"],
+    "Link": "https://github.com/Nitesh-04/locked-in"
   },
   {
-    id: 4,
-    Name: "ExamCooker",
-    Description:
-      "Led a team of 20 developing ExamCooker, an exam preparation platform featuring paper uploads, note sharing, and discussion forum. Reviewed and merged pull requests and maintained a 5,500-line codebase that supports a user base of 11000+ students.",
-    Tech: [ "NextJS","TypeScript", "Redis", "Google Cloud"],
-    Link: "https://github.com/ACM-VIT/ExamCooker-2024",
-    RedirectLink: "https://examcooker.acmvit.com/",
-  },
+    "id": 4,
+    "Name": "ExamCooker",
+    "Description": "Led a 20-member team in developing an exam preparation platform with paper uploads, note sharing, and a discussion forum. Managed a large codebase and supported a user base of over 11,000 students.",
+    "Tech": ["NextJS", "TypeScript", "Redis", "Google Cloud"],
+    "Link": "https://github.com/ACM-VIT/ExamCooker-2024",
+    "RedirectLink": "https://examcooker.acmvit.com/"
+  }
 ];
