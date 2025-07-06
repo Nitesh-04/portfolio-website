@@ -19,7 +19,7 @@ export default function Projects() {
           >
             <div className="flex justify-between items-center">
               <p
-                className={`text-primary dark:text-primary font-extrabold text-lg md:text-xl ${chivo1.className}`}
+                className={`text-primary dark:text-primary font-extrabold text-xl md:text-xl ${chivo1.className}`}
               >
                 {project.Name}
               </p>
