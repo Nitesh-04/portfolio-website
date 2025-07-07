@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "./_components/ThemeProvider";
+import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nitesh Kakkar",
-  description: "Portfolio of Nitesh Kakkar",
+  description: "Portfolio Website of Nitesh Kakkar",
 };
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
