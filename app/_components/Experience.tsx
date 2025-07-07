@@ -5,19 +5,19 @@ const chivo = Chivo_Mono({ subsets: ["latin"], weight: "500" });
 export default function Experience() {
   return (
     <div id="experience" className="relative mt-20 px-4 md:px-10">
-      <div className="md:block hidden absolute top-10 left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200 dark:bg-gray-700 z-0"></div>
+      <div className="md:block hidden absolute top-20 bottom-20 left-1/2 transform -translate-x-1/2 w-1 bg-gray-200 dark:bg-gray-700 z-0"></div>
       <div className="relative z-10">
         <p className="text-foreground dark:text-foreground text-3xl font-bold text-center mb-10 bg-background dark:bg-background px-10 inline-block">
           Experience
         </p>
       </div>
-      <div className="space-y-12 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 max-w-5xl mx-auto">
         {experiences.map((exp, index) => (
           <div
             key={exp.id}
             className={`relative flex items-center md:justify-start ${
               index % 2 === 0 ? "" : "md:flex-row-reverse"
-            }`}
+            } mb-12 ${index !== 0 ? "md:-mt-20" : ""}`}
           >
             <div
               className={`w-full md:w-5/12 p-6 bg-white dark:bg-background rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow duration-300 `}
