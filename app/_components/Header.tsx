@@ -5,11 +5,14 @@ import { useState} from "react";
 import { Close } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import ThemeToggle from "./ThemeToggle";
+import ChatModal from "./ChatModal";
+import { MessageCircle } from "lucide-react";
 
 const chivo = Chivo_Mono({ subsets: ["latin"], weight: "400" });
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
+  const [showChatModal, setShowChatModal] = useState(false);
   
   return (
     <div className="flex justify-between items-center p-4 px-10">
@@ -18,6 +21,9 @@ export default function Header() {
       </div>
       <div className={`md:flex space-x-10 hidden ${chivo.className}`}>
         <ThemeToggle />
+        <button onClick={() => setShowChatModal(true)} className="transition-all flex gap-2 duration-500 text-foreground dark:text-foreground hover:text-gray-400">
+          <MessageCircle/> ChatBot
+        </button>
         <a
           href="#home"
           className="transition-all duration-500 text-foreground dark:text-foreground hover:text-gray-400"
@@ -92,6 +98,7 @@ export default function Header() {
           </div>
         </div>
       )}
+      {showChatModal && <ChatModal onClose={() => setShowChatModal(false)} />}
     </div>
   );
 }
