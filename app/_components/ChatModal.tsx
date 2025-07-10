@@ -11,8 +11,8 @@ interface ChatModalProps {
 const ChatModal = ({ onClose }: ChatModalProps) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-40 flex justify-center items-center">
-      <div className="bg-card rounded-lg shadow-lg w-full max-w-lg relative">
-        <button onClick={onClose} className="absolute top-2 right-2 text-foreground">X</button>
+      <div className="bg-card rounded-lg shadow-lg w-full max-w-3xl relative">
+        <button onClick={onClose} className="absolute top-2 left-2 text-foreground p-2 bg-orange-300 rounded-lg">X</button>
         <Chat />
       </div>
     </div>
