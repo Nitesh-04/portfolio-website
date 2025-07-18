@@ -25,8 +25,6 @@ export async function POST(req: Request) {
 
         const contextChunks = results.matches?.map((m) => m.metadata?.text).filter(Boolean) ?? [];
 
-        console.log('Context chunks:', contextChunks);
-
         const prompt = `
                 Answer the user's question using only the context below:
 
