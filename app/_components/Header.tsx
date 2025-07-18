@@ -68,6 +68,12 @@ export default function Header() {
               <Close className="self-end" />
             </button>
             <a
+              onClick={() => setShowChatModal(true)}
+              className="transition-all duration-500 text-lg"
+            >
+              Chatbot
+            </a>
+            <a
               href="#home"
               onClick={() => setShowMenu(false)}
               className="transition-all duration-500 text-lg"
