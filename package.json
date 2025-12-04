@@ -25,7 +25,7 @@
     "devicon": "^2.16.0",
     "dotenv": "^17.2.0",
     "lucide-react": "^0.471.1",
-    "next": "^15.3.1",
+    "next": "^15.5.7",
     "next-themes": "^0.4.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
