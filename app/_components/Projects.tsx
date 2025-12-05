@@ -88,10 +88,10 @@ const projects = [
   },
   {
     "id": 3,
-    "Name": "Locked-In",
-    "Description": "Architected a scalable backend for collaborative study tracking, supporting group creation, member roles, and session logging. Designed with a clean, modular MVC-inspired structure for maintainability.",
-    "Tech": ["GoLang", "Go Fiber", "Gorm", "Postgresql", "Postman"],
-    "Link": "https://github.com/Nitesh-04/locked-in"
+    "Name": "Realtime-Racing",
+    "Description": "A typing race game using golang and real time communication for low-latency interactions and live race updates. Developed WebSocket broadcasting logic, handling and synchronizing race events.",
+    "Tech": ["GoLang", "Go Fiber", "Websockets", "Postgresql", "React"],
+    "Link": "https://github.com/Nitesh-04/realtime-racing"
   },
   {
     "id": 4,
