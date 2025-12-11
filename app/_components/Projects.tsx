@@ -73,7 +73,7 @@ const projects = [
   {
     "id": 1,
     "Name": "TrackHub",
-    "Description": "Developed a full-stack internship tracking platform to centralize application logging, interview dates, and status updates. Features customizable, automated notifications for efficient management.",
+    "Description": "Built an internship tracking platform that offers centralized job application management with automated notifications and an intelligent mailbox watcher with a pub/sub workflow that enables automated rounds creation. ",
     "Tech": ["NextJS", "TypeScript", "Prisma", "CockroachDB", "Cron Jobs"],
     "Link": "https://github.com/Nitesh-04/track-hub",
     "RedirectLink": "https://trackhub.niteshkakkar.tech/"
