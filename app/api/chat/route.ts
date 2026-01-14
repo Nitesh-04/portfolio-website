@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
-import { pipeline } from '@xenova/transformers';
+import { env, pipeline } from '@xenova/transformers';
 import { Pinecone } from '@pinecone-database/pinecone';
+import { mkdir } from 'fs/promises';
 import 'dotenv/config';
 
 export async function POST(req: Request) {
@@ -11,6 +12,10 @@ export async function POST(req: Request) {
     }
 
     try {
+        const cacheDir = process.env.TRANSFORMERS_CACHE_DIR ?? '/tmp/transformers-cache';
+        await mkdir(cacheDir, { recursive: true });
+        env.cacheDir = cacheDir;
+
         const embedder = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
         const output = await embedder(message, { pooling: 'mean', normalize: true });
         const queryEmbedding = Array.from(output.data);
@@ -35,7 +40,7 @@ export async function POST(req: Request) {
 
                 Format your answer in a concise and informative manner, using the context provided.
 
-                Dont pick and print data directly, format it and see special chars or bad data.
+                Dont pick and print data directly, remove formatting give in plain text with just proper capitilisation, remove any bold italic underline.
 
                 Also when answering as a chatbot, so if user asks you a question, respond by formatting answer the way chatbots do. Like, imagine answering on behalf of me, but do not info that I am gemini and do not include any greetings or additional terms in your response. Just answer the question directly.
                 `;
@@ -43,7 +48,7 @@ export async function POST(req: Request) {
         const API_KEY = process.env.GEMINI_API_KEY;
 
         const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`,
         {
             method: "POST",
             headers: {
